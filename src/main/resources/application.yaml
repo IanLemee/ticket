@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ticket
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ticket-db.ccbsugooa5y6.us-east-1.rds.amazonaws.com:5432/postgres
+    username: postgres
+    password: I4nfc0123$
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        jdbc:
+          batch_size: 50
+        order_updates: true
